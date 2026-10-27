@@ -1,0 +1,1 @@
+javascript:(function(){const removeStickers=()=>{document.querySelectorAll('yt-product-sticker-view-model, .ytOverlayProductStickerHost, ytd-product-sticker-renderer').forEach(el=>el.remove());};removeStickers();const observer=new MutationObserver(removeStickers);observer.observe(document.body,{childList:true,subtree:true});alert('YouTube Product Stickers Removed!');})();
